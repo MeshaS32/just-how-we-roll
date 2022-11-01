@@ -132,8 +132,9 @@ function dd6Roll(){
     console.log(result2)
     imageDD62.src = `/images/d6/${result2}.png` 
     
-    doubleSixes.push(result)
+    doubleSixes.push(result, result2)
     console.log(doubleSixes)
+
 
     meanDD6.innerText = getMean(doubleSixes)
     
@@ -157,6 +158,7 @@ function d20Roll(){
 
     imageD20.src = `images/numbers/${result}.png`
     twenties.push(result)
+
     console.log(twenties)
 
     mean20.innerText = getMean(twenties)
