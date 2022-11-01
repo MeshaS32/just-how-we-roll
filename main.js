@@ -26,7 +26,7 @@ let resetButton = document.querySelector("#reset-button")
 
 let imageD6 = document.querySelector("#d6-roll");
 let meanD6 = document.querySelector("#d6-rolls-mean")
-let medianD6 = document.querySelector("#d6-rolls-mean")
+
 
 let imageDD6 = document.querySelector("#double-d6-roll-1")
 let imageDD62 = document.querySelector("#double-d6-roll-2")
@@ -120,6 +120,7 @@ console.log(sixes)
 
 meanD6.innerText = getMean(sixes);
 
+
 }    
 function dd6Roll(){
     let result = getRandomNumber(6)
@@ -135,6 +136,7 @@ function dd6Roll(){
     console.log(doubleSixes)
 
     meanDD6.innerText = getMean(doubleSixes)
+    
 }
 
 function d12Roll(){
@@ -155,7 +157,7 @@ function d20Roll(){
 
     imageD20.src = `images/numbers/${result}.png`
     twenties.push(result)
-    console.log(twelves)
+    console.log(twenties)
 
     mean20.innerText = getMean(twenties)
 
@@ -176,13 +178,13 @@ function getMean(array){
     return total/array.length;
 }
 
-function getMedian(array){
+// function getMedian(array){
      
-    let total = arr.sort((a,b) => a-b)
+//     let total = 0
 
-    for(let i= 0; i < array.length;i++){
-    total = total + array[i];
-    }
-    return total/array.length/2;
-}
+//     for(let i= 0; i = array.length;i++){
+//     total = total + array[i];
+//     }
+//     return total/array.length/2;
+// }
 
