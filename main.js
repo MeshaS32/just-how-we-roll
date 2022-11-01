@@ -77,7 +77,6 @@ imageD20.addEventListener("click", function(){
 
 
 
-
 /******************
  * RESET FUNCTION *
  ******************/
@@ -85,10 +84,10 @@ imageD20.addEventListener("click", function(){
 
 function resetDice(){
     //empty global arrays
-let sixes = [];
-let doubleSixes = [];
-let twelves = [];
-let twenties = [];
+sixes = [];
+doubleSixes = [];
+twelves = [];
+twenties = [];
 
 //reset image
 // images/start/d6.png
@@ -179,10 +178,11 @@ function getMean(array){
 
 function getMedian(array){
      
-    let total = 0
+    let total = arr.sort((a,b) => a-b)
 
     for(let i= 0; i < array.length;i++){
     total = total + array[i];
     }
     return total/array.length/2;
 }
+
